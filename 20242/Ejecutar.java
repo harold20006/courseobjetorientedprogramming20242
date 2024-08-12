@@ -1,7 +1,7 @@
 
 public class Ejecutar {
     public static void main(String[] args) {
-        System.out.println("ejercicio 1");
+        System.out.println("ejercicios");
 
         // comentario de una sola linea
 
