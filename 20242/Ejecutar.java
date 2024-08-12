@@ -41,5 +41,7 @@ public class Ejecutar {
         System.out.println(F +" farenheit a Grados centigrados ="+ gradoscentigrados);
         System.out.println(C +" centigrados a Grados farengehit ="+ gradosfarenheit);
 
+        //ejercicio 4
+
     }
 }
