@@ -52,12 +52,29 @@ public class Ejecutar {
 
      // ejercicio 5
 
+     double D = 0.00025;
+     double E = 0.00022;
+     int pesos= 50000;
+     double cambiodepesosadolares= pesos*D;
+     double cambiodepesosaeuros= pesos*E;
+     System.out.println("el cambio de pesos a dolares es:"+cambiodepesosadolares);
+     System.out.println("el cambio de pesos a euros es:"+cambiodepesosaeuros);
+
+     //ejercicio 6
+
+     int hora= 5;
+     double iva=0.20;
+     final int valorH=2000;
+     double pagoparquedaro=((valorH*hora)*iva)+(valorH*hora);
+     System.out.println("el valor del parqueadero es:"+pagoparquedaro);
 
 
 
 
 
-     
+
+
+
 
     }
 }
