@@ -43,5 +43,21 @@ public class Ejecutar {
 
         //ejercicio 4
 
+       int salariobruto = 1200000;
+       int deducciones = 80000;
+       int comision = 50000;
+       int salarioneto = (salariobruto - deducciones) + comision;
+
+     System.out.println("El salario es:"+ salarioneto);
+
+     // ejercicio 5
+
+
+
+
+
+
+     
+
     }
 }
