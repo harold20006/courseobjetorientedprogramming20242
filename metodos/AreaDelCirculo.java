@@ -9,5 +9,19 @@ public class AreaDelCirculo {
     double AreaDelCirculo;
     Scanner scanner = new Scanner(System.in);
    
-    
+    public void leerNumeroYCalcularArea(){
+
+        System.out.println("ingrese un numero:");
+        r=scanner.nextInt();
+
+        AreaDelCirculo= PI * (r*r);
+
+        System.out.println("El area del circulo es:"+AreaDelCirculo);
+
+      
+   }
+   public static void main(String[] args) {
+    AreaDelCirculo area = new AreaDelCirculo();
+    area.leerNumeroYCalcularArea();
+   }
 }
