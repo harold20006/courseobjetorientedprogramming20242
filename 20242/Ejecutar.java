@@ -62,7 +62,7 @@ public class Ejecutar {
 
      //ejercicio 6
 
-     int hora= 5;
+     int hora= 10;
      double iva=0.20;
      final int valorH=2000;
      double pagoparquedaro=((valorH*hora)*iva)+(valorH*hora);
