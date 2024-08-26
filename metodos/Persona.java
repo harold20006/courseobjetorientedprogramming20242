@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class Persona {
-    char nombre;
-    int peso;
-    double altura;
-    int edad;
+     char nombre;
+     int peso;
+     double altura;
+     int edad;
     Scanner scanner = new Scanner(System.in);
 
     public void leerDatos() {
