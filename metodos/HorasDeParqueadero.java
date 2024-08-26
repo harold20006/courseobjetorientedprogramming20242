@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HorasDeParqueadero {
     int hora;
     double iva = 0.20;
-    final int valorH = 2;
+    final int valorH = 2000;
     double pagoparquedaro;
     Scanner scanner = new Scanner(System.in);
 
