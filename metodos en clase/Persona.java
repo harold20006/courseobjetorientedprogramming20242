@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Persona {
@@ -29,7 +30,6 @@ public class Persona {
         edad = scanner.nextInt();
 
     }
-
     public static void main(String[] args) {
         Persona objper = new Persona();
         objper.leerDatos();
