@@ -5,9 +5,9 @@ public class Persona {
      int peso;
      double altura;
      int edad;
-    Scanner scanner = new Scanner(System.in);
+     Scanner scanner = new Scanner(System.in);
 
-    public void leerDatos() {
+     public void leerDatos() {
         System.out.println("ingrese su nombre:");
         nombre = scanner.next().charAt(0);
         System.out.println("ingrese su peso:");
@@ -17,9 +17,9 @@ public class Persona {
         System.out.println("ingrese su edad:");
         edad = scanner.nextInt();
 
-    }
-    public static void main(String[] args) {
+     }
+     public static void main(String[] args) {
         Persona objper = new Persona();
         objper.leerDatos();
-    }
+     }
 }
