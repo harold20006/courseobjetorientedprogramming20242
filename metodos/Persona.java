@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Persona {
-     char nombre;
+     String nombre;
      int peso;
      double altura;
      int edad;
@@ -9,7 +9,7 @@ public class Persona {
 
      public void leerDatos() {
         System.out.println("ingrese su nombre:");
-        nombre = scanner.next().charAt(0);
+        nombre = scanner.next();
         System.out.println("ingrese su peso:");
         peso = scanner.nextInt();
         System.out.println("ingrese su altura:");
