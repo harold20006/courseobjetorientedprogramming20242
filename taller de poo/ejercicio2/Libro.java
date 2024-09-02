@@ -1,44 +1,46 @@
 package ejercicio2;
 
 public class Libro {
-    String titulo;
-    String autor;
-    int ISBN;
-    int paginas;
-    boolean disponibilidad;
+    private String titulo;
+    private String autor;
+    private int ISBN;
+    private int numPaginas;
+    private boolean prestado;
 
-    public Libro(String titulo, String autor, int ISBN, int paginas, boolean disponibilidad) {
+    public Libro(String titulo, String autor, int ISBN, int numPaginas, boolean prestado) {
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
-        this.paginas = paginas;
-        this.disponibilidad = disponibilidad;
+        this.numPaginas = numPaginas;
+        this.prestado = prestado;
     }
 
-    public String disponibilidad() {
-        if (disponibilidad == true) {
-            return "El libro esta disponible";
+    public String info() {
+        if (prestado) {
+            return "El libro " + titulo + " , " + autor + "; ISBN: " + ISBN + ", " + numPaginas + " pgs. "
+                    + " no esta disponible";
         } else {
-            return "El libro no esta disponible";
+            return "El libro " + titulo + " , " + autor + "; ISBN: " + ISBN + ", " + numPaginas + " pgs. "
+                    + " esta disponible";
         }
     }
 
-    public String prestamo() {
-        if (disponibilidad == true) {
-            disponibilidad = false;
-            return "El libro ha sido prestado";
+    public String prestar() {
+        if (prestado) {
+            return "El libro " + titulo + " no se puede prestar";
         } else {
-            return "El libro no esta disponible";
+            prestado = true;
+            return "El libro " + titulo + " ahora es tuyo, recuerda devolverlo";
         }
     }
 
-    public String devolucion() {
-        if (disponibilidad == false) {
-            disponibilidad = true;
-            return "El libro ha sido devuelto";
+    public String devolver() {
+        if (prestado) {
+            prestado = false;
+            return "El libro " + titulo + " se ha devuelto";
         } else {
-            return "El libro no ha sido prestado";
+            return "no puedes devolvel el " + titulo + " si no lo has prestado?";
         }
     }
+
 }
-    
