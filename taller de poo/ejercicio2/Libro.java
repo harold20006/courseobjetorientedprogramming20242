@@ -15,6 +15,46 @@ public class Libro {
         this.prestado = prestado;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(int iSBN) {
+        ISBN = iSBN;
+    }
+
+    public int getNumPaginas() {
+        return numPaginas;
+    }
+
+    public void setNumPaginas(int numPaginas) {
+        this.numPaginas = numPaginas;
+    }
+
+    public boolean getPrestado() {
+        return prestado;
+    }
+
+    public void setPrestado(boolean prestado) {
+        this.prestado = prestado;
+    }
+
     public String info() {
         if (prestado) {
             return "El libro " + titulo + " , " + autor + "; ISBN: " + ISBN + ", " + numPaginas + " pgs. "
