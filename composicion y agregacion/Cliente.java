@@ -1,19 +1,19 @@
 public class Cliente {
-    private String cedula;
+    private long cedula;
     private String nombre;
     private String apellido;
 
-    public Cliente(String cedula, String nombre, String apellido) {
+    public Cliente(long cedula, String nombre, String apellido) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-    public String getCedula() {
+    public long getCedula() {
         return cedula;
     }
 
-    public void setCedula(String cedula) {
+    public void setCedula(long cedula) {
         this.cedula = cedula;
     }
 
@@ -33,8 +33,10 @@ public class Cliente {
         this.apellido = apellido;
     }
 
+    @Override
     public String toString() {
-        return "Cédula: " + cedula + " Nombre: " + nombre + " Apellido: " + apellido;
+        return "Cliente [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
     }
-
+    
+    
 }
