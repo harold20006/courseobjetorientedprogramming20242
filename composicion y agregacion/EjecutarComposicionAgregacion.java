@@ -8,5 +8,7 @@ public class EjecutarComposicionAgregacion {
 
         System.out.println(objbanco1);
         System.out.println(objbanco1.esCliente(objcliente1));
+        System.out.println(objcuenta1.consignar("001-001-0001", 500.00));
+        System.out.println(objcuenta1);
     }
 }
