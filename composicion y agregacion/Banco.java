@@ -37,12 +37,14 @@ public class Banco {
         return "NTI: " + NTI + " Razón social: " + razonsocial + " Cuentas: " + cuentas;
     }
 
-    public boolean esCliente(Cliente cliente) {
-        boolean flag = false;
+    public String esCliente(Cliente cliente) {
+        String msg = "No es cliente";
         if (cliente instanceof Cliente) {
-            flag = true;
+            msg = "Es cliente";
+        }else{
+            msg = "No es cliente";
         }
-        return flag;
+        return msg;
 
     }
 

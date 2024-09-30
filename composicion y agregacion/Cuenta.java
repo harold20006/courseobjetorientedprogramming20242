@@ -38,12 +38,51 @@ public class Cuenta {
         return "Número de cuenta: " + nrocuenta + " Tipo de cuenta: " + tipocuenta + " Saldo: " + saldo;
     }
 
-    public boolean consignar (String nrocuenta,double monto) {
-        boolean flag = false;
-        if (this.nrocuenta.equals("001-001-0001")) {
+    public String consignar (String nrocuenta,double monto) {
+        String msg= "error transacción";
+        if (this.nrocuenta.equals("001-001-0001") && this.nrocuenta.equals("001-001-0002")) {
             this.saldo += monto;
-            flag = true;
+            msg="transacción exitosa";
+        
+        }else{
+            msg="cuenta no encontrada";
         }
-        return flag;
+        return msg;
     }
+
+    public String retirar (String nrocuenta,double monto) {
+        String msg= "error transacción";
+        if (this.nrocuenta.equals("001-001-0001") && this.nrocuenta.equals("001-001-0002")) {
+            if (this.saldo >= monto) {
+                this.saldo -= monto;
+                msg="transacción exitosa";
+            }else {
+                msg="saldo insuficiente";
+            }
+        }
+        return msg;
+    }
+
+    public String transferir (String nrocuenta,double monto){
+        String msg= "error transacción";
+        if (this.nrocuenta.equals("001-001-0001") && this.nrocuenta.equals("001-001-0002")) {
+            if (this.saldo >= monto) {
+                this.saldo -= monto;
+                msg="transacción exitosa";
+            }else {
+                msg="saldo insuficiente";
+            }
+        }
+        return msg;
+    }
+
+    public String consultarSaldo (String nrocuenta){
+        String msg= "error transacción";
+        if (this.nrocuenta.equals("001-001-0001")) {
+            msg="saldo: "+this.saldo;
+        }
+        return msg;
+    }
+
+
 }
