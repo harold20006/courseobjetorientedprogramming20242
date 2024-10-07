@@ -8,7 +8,7 @@ public class Nomina {
         trabajadores[1] = new Analista("Pedro", 30, "Analista", 0, 2, 100);
         trabajadores[2] = new Consultor("Maria", 35, "Consultor", 0, 3, 500000);
         trabajadores[3] = new Operario("Luis", 40, "Operario", 0, 4, 20);
-        
+    
        double totalapagar= 0.0;
         for (Trabajador trabajador : trabajadores) {
             totalapagar += trabajador.pagar();
