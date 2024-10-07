@@ -23,7 +23,7 @@ public class Consultor extends Trabajador {
     }
 
     public double salario() {
-        return salariofijo + (comision);
+        return salariofijo + comision;
     }
 
 
