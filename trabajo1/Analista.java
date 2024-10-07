@@ -24,7 +24,7 @@ public class Analista  extends  Trabajador{
         return salariointegral;
     }
 
-    public double salario() {
+    public double pagar() {
         return salariointegral+(lineasdecodigo*VALOR_LINEA_CODIGO);
     }
 

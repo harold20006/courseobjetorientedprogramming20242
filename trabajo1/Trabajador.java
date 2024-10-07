@@ -5,14 +5,14 @@ public class Trabajador {
     private String nombre;
     private int edad;
     private String cargo;
-    private int salario;
+    private int pagar;
     private int id;
 
-    public Trabajador(String nombre, int edad, String cargo, int salario, int id) {
+    public Trabajador(String nombre, int edad, String cargo, int pagar, int id) {
         this.nombre = nombre;
         this.edad = edad;
         this.cargo = cargo;
-        this.salario = salario;
+        this.pagar = pagar;
         this.id = id;
     }
 
@@ -28,8 +28,8 @@ public class Trabajador {
         return cargo;
     }
 
-    public int getSalario() {
-        return salario;
+    public int getpagar() {
+        return pagar;
     }
 
     public int getId() {
@@ -48,8 +48,8 @@ public class Trabajador {
         this.cargo = cargo;
     }
 
-    public void setSalario(int salario) {
-        this.salario = salario;
+    public void setpagar(int pagar) {
+        this.pagar = pagar;
     }
 
     public void setId(int id) {
@@ -57,12 +57,12 @@ public class Trabajador {
     }
 
     public String toString() {
-        return "Nombre: " + nombre + ", Edad: " + edad + ", Cargo: " + cargo + ", Salario: " + salario + ", ID: " + id;
+        return "Nombre: " + nombre + ", Edad: " + edad + ", Cargo: " + cargo + ", pagar" + pagar + ", ID: " + id;
     }
 
-    public double salario() {
-        salario= 0;
-        return salario;
+    public double pagar() {
+        pagar = 0;
+        return pagar();
     }
     
 

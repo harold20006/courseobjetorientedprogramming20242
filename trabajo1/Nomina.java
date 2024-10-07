@@ -9,12 +9,12 @@ public class Nomina {
         trabajadores[2] = new Consultor("Maria", 35, "Consultor", 0, 3, 500000);
         trabajadores[3] = new Operario("Luis", 40, "Operario", 0, 4, 20);
         
-       double totalsalario= 0.0;
+       double totalapagar= 0.0;
         for (Trabajador trabajador : trabajadores) {
-            totalsalario += trabajador.salario();
-            System.out.println(trabajador.getNombre() + " = " + trabajador.salario());
+            totalapagar += trabajador.pagar();
+            System.out.println(trabajador.getNombre() + " = " + trabajador.pagar());
         }
         
-        System.out.println("Total de la nomina: " + totalsalario);
+        System.out.println("Total a pagar: " + totalapagar);
     }
 }

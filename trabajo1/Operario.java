@@ -29,7 +29,7 @@ public class Operario extends Trabajador {
     }
 
 
-    public double salario() {
+    public double pagar() {
         return salariofijo + (horasextras * valorextrahora);
     }
 }
