@@ -12,9 +12,7 @@ public class Nomina {
        double totalsalario= 0.0;
         for (Trabajador trabajador : trabajadores) {
             totalsalario += trabajador.salario();
-        }
-        for (Trabajador trabajador : trabajadores) {
-            System.out.println(trabajador.getNombre() + " " + trabajador.salario());
+            System.out.println(trabajador.getNombre() + " = " + trabajador.salario());
         }
         
         System.out.println("Total de la nomina: " + totalsalario);
