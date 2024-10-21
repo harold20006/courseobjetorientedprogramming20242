@@ -20,10 +20,10 @@ public class Main {
         fotos.add(foto2);
 
         // Crear un producto tipo Impresion
-        Impresion impresion = new Impresion(1, "Rojo", fotos);
+        Producto impresion = new Impresion(1, "Rojo", fotos);
 
         // Crear un producto tipo Camara
-        Camara camara = new Camara(1, "Nikon", "D3500");
+        Producto camara = new Camara(1, "Nikon", "D3500");
 
         // Crear una lista de productos
         List<Producto> productos = new ArrayList<>();
