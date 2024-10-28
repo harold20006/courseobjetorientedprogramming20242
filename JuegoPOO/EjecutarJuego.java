@@ -2,7 +2,7 @@ package JuegoPOO;
 
 
 import java.util.Scanner;
-public class Ejecutar3 {
+public class EjecutarJuego {
     // Método principal que ejecuta el juego
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
