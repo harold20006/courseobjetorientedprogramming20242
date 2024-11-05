@@ -1,55 +1,55 @@
+
 package Ascensor;
 
-import java.util.List;
-
 public class Ascensor {
-    private int pisoActual;
-    private String direccion; // "subiendo" o "bajando"
-    private Puerta puerta; 
-    private List<BotonDestino> botones;
 
-    public Ascensor(int pisoInicial, List<BotonDestino> botones) {
-        this.pisoActual = pisoInicial;
+    private int pisoActual;
+    private String direccion;
+    private boolean PuertasAbiertas;
+    private boolean enMovimiento;
+
+    public Ascensor(int pisoActual, String direccion, boolean PuertasAbiertas, boolean enMovimiento) {
+        this.pisoActual = pisoActual;
         this.direccion = "subiendo";
-        this.puerta = new Puerta();
-        this.botones = botones;
+        this.PuertasAbiertas = false;
+        this.enMovimiento = false;
     }
 
-    public void moverAscensor(int pisoDestino) {
+    public void movimiento(int pisoDestino) {
+        if (!enMovimiento) {
+            System.out.println("el ascensor se en Emergencia ");
+            return;
+        }
         if (pisoDestino > pisoActual) {
             direccion = "subiendo";
         } else if (pisoDestino < pisoActual) {
             direccion = "bajando";
-        } else {
-            System.out.println("El ascensor ya está en el piso " + pisoActual);
-            return;
         }
-        System.out.println("El ascensor se está moviendo de piso " + pisoActual + " a piso " + pisoDestino + " en dirección " + direccion + ".");
+
         pisoActual = pisoDestino;
-        System.out.println("El ascensor ha llegado al piso: " + pisoActual);
+        System.out.println("el ascensor se ha movido al piso " + pisoDestino);
+
     }
 
     public void abrirPuertas() {
-        puerta.abrir();
+        PuertasAbiertas = true;
+        System.out.println("las puertas se han abierto");
     }
 
     public void cerrarPuertas() {
-        puerta.cerrar();
+        PuertasAbiertas = false;
+        System.out.println("las puertas se han cerrado");
+
     }
 
-    public int getPisoActual() {
-        return pisoActual;
+    public void emergencia() {
+        enMovimiento = false;
+        System.out.println("el ascensor se ha detenido" + pisoActual + " por emergencia");
+
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public Puerta getPuerta() {
-        return puerta;
-    }
-
-    public List<BotonDestino> getBotones() {
-        return botones;
+    public void reiniciar() {
+        enMovimiento = true;
+        System.out.println("el ascensor se ha reiniciado");
     }
 }

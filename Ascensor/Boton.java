@@ -1,43 +1,23 @@
 package Ascensor;
 
-public abstract class Boton {
+public class Boton {
+    private String tipo;
+    private boolean ilumnidado;
+    private boolean sonido;
 
-    protected boolean Color;
-    protected boolean sonido;
-
-    public Boton(boolean Color, boolean sonido) {
-        this.Color = Color;
-        this.sonido = sonido;
-    }
-
-    public abstract void presionar();
-
-    public void apagarLuz() {
-        this.Color = false;
-        System.out.println("La luz del botón está apagada.");
-    }
-
-    public void encenderLuz() {
-        this.Color = true;
-        System.out.println("La luz del botón está encendida.");
-    }
-
-    public void emitirSonido() {
-        this.sonido = true;
-        System.out.println("El botón está emitiendo un sonido.");
-    }
-
-    public void detenerSonido() {
+    public Boton(String tipo, boolean iluminado, boolean sonido) {
+        this.tipo = tipo;
+        this.ilumnidado = false;
         this.sonido = false;
-        System.out.println("El botón ha dejado de emitir sonido.");
     }
 
-    public boolean isSonido() {
-        return sonido;
-    }
-
-    public boolean isIluminado() {
-        return Color;
+    public void Presionar() {
+        this.ilumnidado = true;
+        this.sonido = true;
+        System.out.println(
+                "el boton ha sido " + tipo + "presionado y se ha iluminado" + ilumnidado + "y ha sonado" + sonido);
+        this.ilumnidado = false;
+        this.sonido = false;
     }
 
 }
