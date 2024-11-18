@@ -3,7 +3,7 @@ package Ascensor;
 public class Ascensor {
     private int pisoActual; // muestra la ubicación actual del ascensor
     private String direccion; // "subiendo" o "bajando"
-    private boolean puertasAbiertas; // mustra si las puertas del ascensor están abiertas
+    private boolean puertasAbiertas; // muestra si las puertas del ascensor están abiertas
     private boolean enMovimiento; // muestra si el ascensor está en movimiento
 
     // constructor que recibe el piso inicial del ascensor

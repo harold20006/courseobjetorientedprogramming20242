@@ -1,6 +1,6 @@
 package Ascensor;
 
-public class Boton {
+public abstract class Boton {
     private String tipo; // "subida", "bajada", o "seleccion de piso"
     private boolean iluminado; // muestra si el botón está iluminado
     private boolean sonido; // muestra si el botón emite un sonido
