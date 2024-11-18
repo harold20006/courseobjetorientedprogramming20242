@@ -4,11 +4,9 @@ package Ascensor;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * La clase SistemaControl gestiona el funcionamiento del ascensor, incluyendo
- * la gestión de solicitudes de pisos, detección de obstáculos y manejo de
- * emergencias.
- */
+
+ // La clase SistemaControl gestiona el funcionamiento del ascensor
+ 
 public class SistemaControl {
     private Ascensor ascensor;
     private List<Piso> pisos;
@@ -40,10 +38,7 @@ public class SistemaControl {
     }
 
     /**
-     * Solicita el ascensor para un piso específico en una dirección dada.
-     * 
-     * El piso desde donde se solicita el ascensor.
-     * La dirección en la que se desea ir ("subida" o "bajada").
+     * Solicita el ascensor para un piso específico en una dirección específica.
      */
     public void solicitarAscensor(int piso, String direccion) {
         if (!solicitudes.contains(piso)) { // Evita duplicados
